@@ -12,6 +12,7 @@
 		18E139A71CCC1D880099D9FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E139A51CCC1D880099D9FF /* Main.storyboard */; };
 		18E139A91CCC1D880099D9FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E139A81CCC1D880099D9FF /* Assets.xcassets */; };
 		18E139AC1CCC1D880099D9FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E139AA1CCC1D880099D9FF /* LaunchScreen.storyboard */; };
+		18E139B81CCC49540099D9FF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E139B71CCC49540099D9FF /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		18E139A81CCC1D880099D9FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E139AB1CCC1D880099D9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E139AD1CCC1D880099D9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E139B71CCC49540099D9FF /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				18E139A11CCC1D880099D9FF /* AppDelegate.swift */,
 				18E139A31CCC1D880099D9FF /* ViewController.swift */,
 				18E139A51CCC1D880099D9FF /* Main.storyboard */,
+				18E139B71CCC49540099D9FF /* SecondViewController.swift */,
 				18E139A81CCC1D880099D9FF /* Assets.xcassets */,
 				18E139AA1CCC1D880099D9FF /* LaunchScreen.storyboard */,
 				18E139AD1CCC1D880099D9FF /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E139B81CCC49540099D9FF /* SecondViewController.swift in Sources */,
 				18E139A41CCC1D880099D9FF /* ViewController.swift in Sources */,
 				18E139A21CCC1D880099D9FF /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +291,7 @@
 				18E139B21CCC1D880099D9FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

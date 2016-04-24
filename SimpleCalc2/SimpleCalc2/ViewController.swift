@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
     
     var input = "";
+    var allInput : [String] = [];
     var displayedResult = "";
     
     @IBOutlet weak var present: UITextField!
@@ -29,72 +30,10 @@ class ViewController: UIViewController {
         input = input + sender.currentTitle!!;
         present.text = input;
     }
-    //    @IBAction func twoPressed(sender: AnyObject) {
-    //        input += " 2";
-    //        present.text = input;
-    //    }
-    //    @IBAction func threePressed(sender: AnyObject) {
-    //        input += " 3";
-    //        present.text = input;
-    //    }
-    //    @IBAction func fourPressed(sender: AnyObject) {
-    //        input += " 4";
-    //        present.text = input;
-    //    }
-    //    @IBAction func fivePressed(sender: AnyObject) {
-    //        input += " 5";
-    //                present.text = input;
-    //    }
-    //    @IBAction func sixPressed(sender: AnyObject) {
-    //        input += " 6";
-    //                present.text = input;
-    //    }
-    //    @IBAction func sevenPressed(sender: AnyObject) {
-    //        input += " 7";
-    //                present.text = input;
-    //    }
-    //    @IBAction func eightPressed(sender: AnyObject) {
-    //        input += " 8";
-    //                present.text = input;
-    //    }
-    //    @IBAction func ninePressed(sender: AnyObject) {
-    //        input += " 9";
-    //                present.text = input;
-    //    }
-    //    @IBAction func zeroPressed(sender: AnyObject) {
-    //        input += " 0";
-    //                present.text = input;
-    //    }
-    //    @IBAction func plusPressed(sender: AnyObject) {
-    //        input += " +";
-    //                present.text = input;
-    //    }
-    //    @IBAction func minusPressed(sender: AnyObject) {
-    //        input += " -";
-    //        present.text = input;
-    //    }
-    //    @IBAction func multiplyPressed(sender: AnyObject) {
-    //        input += " *";
-    //                present.text = input;
-    //    }
-    //    @IBAction func dividePressed(sender: AnyObject) {
-    //        input += " /";
-    //    }
-    //    @IBAction func modPressed(sender: AnyObject) {
-    //        input += " %"
-    //                present.text = input;
-    //    }
-    //    @IBAction func countPressed(sender: AnyObject) {
-    //        input += " count";
-    //                present.text = input;
-    //    }
     @IBAction func operandPressed(sender: AnyObject) {
         input += " " + sender.currentTitle!! + " ";
         present.text = input;
     }
-    
-    
-    
     
     @IBAction func equals(sender: AnyObject) {
         if input != "" {
@@ -148,19 +87,25 @@ class ViewController: UIViewController {
                     result = firstNum! / secondNum!;
                 } else if oper == "%" {
                     result = firstNum! % secondNum!;
-                }else {
-                    print("Invalid input!");
                 }
             }
+
             NSLog("This is result: \(result)");
             if result != nil {
                 displayedResult = String(result!);
             } else {
                 displayedResult = "your input is invalid. Please try again";
             }
+            allInput.append(input + " = " + displayedResult);
             present.text = displayedResult;
             input = "";
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let SecondVC: SecondViewController = segue.destinationViewController as! SecondViewController;
+        SecondVC.history = allInput;
+    }
+    
 }
 

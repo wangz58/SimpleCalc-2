@@ -28,7 +28,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="C2C-8s-Ptc">
                                 <rect key="frame" x="235" y="210" width="130" height="180"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JI2-YG-BXc">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JI2-YG-BXc">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -73,28 +73,28 @@
                                         <rect key="frame" x="0.0" y="60" width="130" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01p-Sy-cBA">
-                                                <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="5"/>
                                                 <connections>
                                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="DGX-Lb-k1z"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkj-dx-8g9">
-                                                <rect key="frame" x="40" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="30" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="6"/>
                                                 <connections>
                                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Plv-Lw-4EW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSj-fB-nY7">
-                                                <rect key="frame" x="70" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="60" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="7"/>
                                                 <connections>
                                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="3Pr-G8-Qpj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W09-qy-Y7p">
-                                                <rect key="frame" x="100" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="90" y="0.0" width="40" height="30"/>
                                                 <state key="normal" title="8"/>
                                                 <connections>
                                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="mIS-zd-qGR"/>
@@ -178,7 +178,7 @@
                                                     <action selector="operandPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="TTX-x7-ZdP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hg2-go-m8N">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hg2-go-m8N">
                                                 <rect key="frame" x="30" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="/"/>
                                                 <connections>
@@ -196,9 +196,18 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3W-WO-rD1">
+                                <rect key="frame" x="277" y="410" width="47" height="30"/>
+                                <state key="normal" title="history"/>
+                                <connections>
+                                    <segue destination="0ZH-Gl-vPC" kind="show" id="EJq-gQ-VFG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="i3W-WO-rD1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Yj-Ds-h0b"/>
+                            <constraint firstItem="i3W-WO-rD1" firstAttribute="top" secondItem="C2C-8s-Ptc" secondAttribute="bottom" constant="20" id="Dr9-io-ziR"/>
                             <constraint firstItem="C2C-8s-Ptc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E1i-df-BYv"/>
                             <constraint firstItem="C2C-8s-Ptc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JFQ-bb-Ad2"/>
                         </constraints>
@@ -210,6 +219,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="262" y="355"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="pe9-VB-zZa">
+            <objects>
+                <viewController id="0ZH-Gl-vPC" customClass="SecondViewController" customModule="SimpleCalc2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l1j-Fa-ZpV"/>
+                        <viewControllerLayoutGuide type="bottom" id="mOo-9G-lbN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lN1-sc-KY4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVm-jU-13D">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBM-PP-5q5">
+                                <rect key="frame" x="283" y="159" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yZ6-ei-lkF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qVm-jU-13D" firstAttribute="top" secondItem="nBM-PP-5q5" secondAttribute="bottom" constant="20" id="3fS-nS-m5T"/>
+                            <constraint firstItem="nBM-PP-5q5" firstAttribute="centerX" secondItem="lN1-sc-KY4" secondAttribute="centerX" id="8i5-FO-KZJ"/>
+                            <constraint firstItem="qVm-jU-13D" firstAttribute="centerX" secondItem="lN1-sc-KY4" secondAttribute="centerX" id="Fp8-am-iG3"/>
+                            <constraint firstItem="qVm-jU-13D" firstAttribute="centerY" secondItem="lN1-sc-KY4" secondAttribute="centerY" id="sVF-eZ-Idg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="qVm-jU-13D" id="aoC-QM-w3F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpM-GR-DiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="345"/>
         </scene>
     </scenes>
 </document>
