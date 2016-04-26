@@ -11,17 +11,18 @@ import UIKit
 class SecondViewController: UIViewController {
     
     var history: [String] = [];
-    @IBOutlet weak var text: UITextView!
     @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet weak var label: UILabel!
 //    @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.contentSize = CGSizeMake(400, 2300);
         // Do any additional setup after loading the view.
-        text.text = "";
+        label.text = "";
         var i = history.count - 1;
         while i >= 0 {
-            text.text! += history[i] + "\n";
+            label.text! += history[i] + "\n";
             i = i - 1;
         }
     }
