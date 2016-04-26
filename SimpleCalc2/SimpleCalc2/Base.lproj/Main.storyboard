@@ -73,28 +73,28 @@
                                         <rect key="frame" x="0.0" y="60" width="130" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01p-Sy-cBA">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
                                                 <state key="normal" title="5"/>
                                                 <connections>
                                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="DGX-Lb-k1z"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkj-dx-8g9">
-                                                <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="40" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="6"/>
                                                 <connections>
                                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Plv-Lw-4EW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSj-fB-nY7">
-                                                <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="70" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="7"/>
                                                 <connections>
                                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="3Pr-G8-Qpj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W09-qy-Y7p">
-                                                <rect key="frame" x="90" y="0.0" width="40" height="30"/>
+                                                <rect key="frame" x="100" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="8"/>
                                                 <connections>
                                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="mIS-zd-qGR"/>
@@ -105,29 +105,29 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kO-qV-0D2">
                                         <rect key="frame" x="0.0" y="90" width="130" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jne-Ng-f6n">
-                                                <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jne-Ng-f6n">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="9"/>
                                                 <connections>
                                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="lVv-2j-KKK"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7b-Gy-KKl">
-                                                <rect key="frame" x="40" y="0.0" width="30" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7b-Gy-KKl">
+                                                <rect key="frame" x="30" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="0"/>
                                                 <connections>
                                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="JUg-gt-gNA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="050-VL-9F4">
-                                                <rect key="frame" x="70" y="0.0" width="30" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="050-VL-9F4">
+                                                <rect key="frame" x="60" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
                                                     <action selector="operandPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="r0S-c7-OIK"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edH-JY-dCi">
-                                                <rect key="frame" x="100" y="0.0" width="30" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edH-JY-dCi">
+                                                <rect key="frame" x="90" y="0.0" width="40" height="30"/>
                                                 <state key="normal" title="-"/>
                                                 <connections>
                                                     <action selector="operandPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="G4h-au-Whj"/>
@@ -232,8 +232,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVm-jU-13D">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVm-jU-13D">
+                                <rect key="frame" x="180" y="236" width="240" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fV7-Ta-6qb">
+                                        <rect key="frame" x="8" y="8" width="224" height="112"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N3t-Vh-gtO">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="285"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBM-PP-5q5">
                                 <rect key="frame" x="283" y="159" width="34" height="30"/>
@@ -253,6 +267,7 @@
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="qVm-jU-13D" id="aoC-QM-w3F"/>
+                        <outlet property="text" destination="N3t-Vh-gtO" id="hS1-RG-DZZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpM-GR-DiI" userLabel="First Responder" sceneMemberID="firstResponder"/>

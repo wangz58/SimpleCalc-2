@@ -11,21 +11,18 @@ import UIKit
 class SecondViewController: UIViewController {
     
     var history: [String] = [];
-
+    @IBOutlet weak var text: UITextView!
     @IBOutlet var scrollView: UIScrollView!
+//    @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        scrollView.contentSize.height = 1000;
-        var i = 0;
-        while i < history.count {
-            let oneHistory = UILabel();
-            oneHistory.text = history[i];
-            oneHistory.textColor = UIColor.blackColor();
-            print(oneHistory);
-            scrollView.insertSubview(oneHistory, atIndex: i);
-            i = i + 1;
+        text.text = "";
+        var i = history.count - 1;
+        while i >= 0 {
+            text.text! += history[i] + "\n";
+            i = i - 1;
         }
     }
 
